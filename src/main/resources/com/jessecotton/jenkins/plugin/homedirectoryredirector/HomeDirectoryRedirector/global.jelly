@@ -1,0 +1,24 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+<f:section title="Home Directory Redirector Settings">
+  <f:entry title="Enable home directory redirection">
+    <f:checkbox
+      field="enableRedirection"
+      name="enableRedirection"
+      checked="${enableRedirection}" />
+  </f:entry>
+  <f:entry title="Enable skeleton directory copy">
+    <f:checkbox
+      field="enableSkeletonCopy"
+      name="enableSkeletonCopy"
+      checked="${enableSkeletonCopy}" />
+  </f:entry> 
+  <f:entry title="Skeleton directory">
+    <f:textbox
+      field="skeletonDirectory"
+      name="skeletonDirectory"
+      value="${skeletonDirectory}"
+      placeholder="ex: /etc/skel" />
+  </f:entry>
+</f:section>
+</j:jelly>
